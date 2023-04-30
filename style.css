@@ -1,0 +1,121 @@
+/* style.css */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+html {
+	animation: fade-in 0.75s ease-out;
+	min-height: 100%;
+	padding: 10px;
+	color: #111;
+	background: #f3f3f3;
+	font-family: "SegoeUIVF", "Segoe UI", sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.chatbox {
+	width: 500px;
+	min-height: 500px;
+	background: #f3f3f3;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 2px solid  #0084ff;
+	box-shadow: -2.5px 2.5px 12px #11111180, 2.5px -2.5px 12px #ebebeb80;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background: #0084ff;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: -2.5px 2.5px 12px #11111180, 2.5px -2.5px 12px #ebebeb80;
+}
+
+.body {
+	width: 100%;
+	height: 400px;
+	padding: 10px;
+	overflow-y: scroll;
+	position: relative;
+}
+
+#bot {
+	width: max-content;
+	max-width: 90%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.bot {
+	background: #0084ff;
+	color: #f1f1f1;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 10px;
+	width: 100%;
+	max-width: 100%;
+	box-shadow: -2.5px 2.5px 12px #11111180, 2.5px -2.5px 12px #ebebeb80;
+}
+
+#user {
+	width: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.user {
+	width: max-content;
+	max-width: 100%;
+	background-color: #ddd;
+	color: #111;
+	padding: 10px;
+	margin: 10px 10px 10px auto; 
+	border-radius: 10px;
+	box-shadow: -2.5px 2.5px 12px #11111180, 2.5px -2.5px 12px #ebebeb80;
+}
+
+.footer {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	box-shadow: -2.5px 2.5px 12px #11111180, 2.5px -2.5px 12px #ebebeb80;
+}
+
+.footer input {
+	width: 80%;
+	background: #f3f3f3;
+	border-radius: 0 0 0 8px;
+	font-family: inherit;
+	padding: 15px;
+	border: 0px solid  #0084ff;
+	border-top-width: 2px;
+	outline: 0;
+}
+
+.footer button {
+	width: 20%;
+	background-color: #0084ff;
+	border: 0;
+	color: #f1f1f1;
+}
